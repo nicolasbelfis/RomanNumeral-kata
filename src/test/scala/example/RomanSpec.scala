@@ -12,5 +12,11 @@ class RomanSpec extends AnyFlatSpec with Matchers {
     RomanLiteral.convert(10) shouldBe "X"
     RomanLiteral.convert(20) shouldBe "XX"
     RomanLiteral.convert(28) shouldBe "XXVIII"
+    RomanLiteral.convert(4) shouldBe "IV"
+    RomanLiteral.convert(9) shouldBe "IX"
+    RomanLiteral.convert(40) shouldBe "XL"
+    RomanLiteral.convert(50) shouldBe "L"
+    RomanLiteral.convert(49) shouldBe "XLIX"
+    RomanLiteral.convert(89) shouldBe "LXXXIX"
   }
 }
