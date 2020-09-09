@@ -10,5 +10,6 @@ class RomanSpec extends AnyFlatSpec with Matchers {
     RomanLiteral.convert(3) shouldBe "III"
     RomanLiteral.convert(5) shouldBe "V"
     RomanLiteral.convert(10) shouldBe "X"
+    RomanLiteral.convert(20) shouldBe "XX"
   }
 }
